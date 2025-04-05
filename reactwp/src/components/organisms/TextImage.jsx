@@ -6,6 +6,7 @@ const TextImage = ({
   altText = "Imagen de ejemplo",
   title = "Título de ejemplo",
   description = "Este es un texto descriptivo que acompaña a la imagen.",
+  height = "50",
   botonText = null,
   botonHref = null,
   reverse = false, // Muestra la imagen a la derecha si es true
@@ -16,11 +17,12 @@ const TextImage = ({
         <img
           src={imageSrc}
           alt={altText}
-          className="w-full md:w-1/2 rounded-xl shadow-md"
-        />
+          style={{ height }}
+          className="max-h-40 w-auto md:max-h-80 object-contain rounded-xl shadow-md"
+          />
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-3xl font-bold text-blue-700 mb-4">{title}</h2>
-          <p className="text-gray-700 text-lg mb-4">{description}</p>
+          <p className="text-gray-700 text-lg mb-4 text-justify">{description}</p>
           {botonText && botonHref && (
             <ButtonAtom text={botonText} href={botonHref} />
           )}

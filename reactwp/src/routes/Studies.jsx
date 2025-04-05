@@ -6,9 +6,8 @@ function Studies (){
     return(
         <div className="min-h-screen bg-blue-50">
             <NavBar/>
-            <TextImage reverse imageSrc="../src/assets/Javeriana.png" altText="Javeriana" title="Ingeniero Industrial Pontificia universidad Javeriana" description="Me gradué de Ingeniería Industrial en la Pontificia Universidad Javeriana" />
-            <TextImage imageSrc="../src/assets/Javeriana.png" altText="Javeriana" title="Ingeniero de Sistemas Pontificia universidad Javeriana" description="Actualmente soy estudiante de octavo semestre de Ingeniería de Sistemas" />
-            <TextImage reverse imageSrc="../src/assets/SanBartolo.png" altText="San Bartolo" title="Bachiller Colegio San Bartolomé la merced" description="Estudié durante 14 años, en donde obtuve mi grado de bachiller"/>
+            <TextImage reverse imageSrc="../src/assets/Javeriana.png" altText="Javeriana" title="Pontificia Universidad Javeriana" description=" Graduado de Ingeniería Industrial y estudiante de último semestre de Ingeniería de Sistemas"/>
+            <TextImage  imageSrc="../src/assets/SanBartolo.png" altText="San Bartolo" title="Colegio San Bartolomé La Merced" description="Bachiller"/>
         </div>
     )
 }

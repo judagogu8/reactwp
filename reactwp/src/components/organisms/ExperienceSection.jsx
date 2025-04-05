@@ -1,5 +1,5 @@
 import React from 'react';
-import ExperienceCard from './ExperienceCard';
+import ExperienceCard from '../atoms/ExperienceCard';
 
 const ExperienceSection = () => {
     return (
@@ -8,20 +8,20 @@ const ExperienceSection = () => {
 
             <div className="max-w-4xl mx-auto">
                 <ExperienceCard
-                    title="Engineer Internship"
+                    title="Práctica de Ingeniería"
                     company="INTERELECTRICAS S.A"
                     location="Bogotá, Colombia"
-                    date="June 2024 - July 2024"
+                    date="Junio 2024 - Julio 2024"
                     description={[
                         "Gestioné la información del sitio web de la empresa, actualizando inventarios y productos.",
                         "Utilicé Excel para el análisis de datos y generación de reportes."
                     ]}
                 />
                 <ExperienceCard
-                    title="Administrative Monitor"
+                    title="Monitoría Administrativa"
                     company="Pontificia Universidad Javeriana"
                     location="Bogotá, Colombia"
-                    date="March 2023 – June 2024"
+                    date="Marzo 2023 – Junio 2024"
                     description={[
                         "Apoyé los procesos administrativos del departamento, colaborando en la organización y gestión de actividades académicas y administrativas.",
                         "Participé en la coordinación de eventos académicos y en la asignación de recursos."
