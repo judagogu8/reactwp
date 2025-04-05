@@ -9,44 +9,25 @@ const TextImage = ({
   botonText = null,
   botonHref = null,
   reverse = false, // Muestra la imagen a la derecha si es true
-
 }) => {
-  if (botonText && botonHref) {
-    return (
-      <div className="flex-grow flex items-center justify-center bg-white px-6 bg-gradient-to-r from-blue-500 to-white">
-        <div className={`flex flex-col md:flex-row items-center gap-8 max-w-5xl w-full ${reverse ? "md:flex-row-reverse" : ""}`}>
-          <img
-            src={imageSrc}
-            alt={altText}
-            className="w-full md:w-1/2 rounded-lg shadow-lg"
-          />
-          <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-4">{title}</h2>
-            <p className="text-gray-700 text-lg">{description}</p>
+  return (
+    <div className="w-full px-4 py-10 flex justify-center">
+      <div className={`flex flex-col md:flex-row items-center gap-8 max-w-5xl w-full bg-white shadow-md rounded-2xl p-6 ${reverse ? "md:flex-row-reverse" : ""}`}>
+        <img
+          src={imageSrc}
+          alt={altText}
+          className="w-full md:w-1/2 rounded-xl shadow-md"
+        />
+        <div className="md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl font-bold text-blue-700 mb-4">{title}</h2>
+          <p className="text-gray-700 text-lg mb-4">{description}</p>
+          {botonText && botonHref && (
             <ButtonAtom text={botonText} href={botonHref} />
-
-          </div>
+          )}
         </div>
       </div>
-    );
-  }
-  else{
-    return (
-      <div className="flex-grow flex items-center justify-center bg-white px-6 bg-gradient-to-r from-blue-500 to-white">
-        <div className={`flex flex-col md:flex-row items-center gap-8 max-w-5xl w-full ${reverse ? "md:flex-row-reverse" : ""}`}>
-          <img
-            src={imageSrc}
-            alt={altText}
-            className="w-full md:w-1/2 rounded-lg shadow-lg"
-          />
-          <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-4">{title}</h2>
-            <p className="text-gray-700 text-lg">{description}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
+    </div>
+  );
 };
 
 export default TextImage;

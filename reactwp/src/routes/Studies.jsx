@@ -4,7 +4,7 @@ import TextImage from "../components/organisms/TextImage";
 
 function Studies (){
     return(
-        <div>
+        <div className="min-h-screen bg-blue-50">
             <NavBar/>
             <TextImage reverse imageSrc="../src/assets/Javeriana.png" altText="Javeriana" title="Ingeniero Industrial Pontificia universidad Javeriana" description="Me gradué de Ingeniería Industrial en la Pontificia Universidad Javeriana" />
             <TextImage imageSrc="../src/assets/Javeriana.png" altText="Javeriana" title="Ingeniero de Sistemas Pontificia universidad Javeriana" description="Actualmente soy estudiante de octavo semestre de Ingeniería de Sistemas" />
