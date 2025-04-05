@@ -7,7 +7,6 @@ const TextAtom = ({
   weight = "font-normal",      // font-light, font-medium, font-bold
   tag = "span",                // span, p, h1, etc.
   className = "",
-  border = "border border-gray-300", // Estilo de borde por defecto
   padding = "px-2 py-1",             // Padding por defecto
   rounded = "rounded-md",            // Bordes redondeados
   bg = "",                           // Fondo opcional
@@ -18,7 +17,6 @@ const TextAtom = ({
     text-${size} 
     ${color} 
     ${weight} 
-    ${border} 
     ${padding} 
     ${rounded} 
     ${bg} 

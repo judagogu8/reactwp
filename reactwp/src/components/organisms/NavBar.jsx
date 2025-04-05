@@ -1,4 +1,6 @@
 import React from 'react';
+import TextAtom from '../atoms/TextAtom';
+import ButtonAtom from '../atoms/ButtonAtom';
 
 const NavBar = () => {
   return (
@@ -11,14 +13,13 @@ const NavBar = () => {
       {/* Links */}
       <ul className="flex space-x-6 items-center">
         <li>
-          <a href="/" className="text-gray-700 hover:text-blue-600 transition font-medium">
-            Inicio
-          </a>
+          <ButtonAtom text='Inicio' href={"/"}/>
         </li>
         <li>
-          <a href="/Content" className="text-gray-700 hover:text-blue-600 transition font-medium">
-            Contenido
-          </a>
+          <ButtonAtom text='Contenido' href={"/Content"}/>
+        </li>
+        <li>
+          <ButtonAtom text='Estudios' href={"/Studies"}/>
         </li>
       </ul>
     </nav>
