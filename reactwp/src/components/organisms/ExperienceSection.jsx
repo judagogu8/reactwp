@@ -8,7 +8,7 @@ const ExperienceSection = () => {
 
             <div className="max-w-4xl mx-auto">
                 <ExperienceCard
-                    title="Práctica de Ingeniería"
+                    title="Ingeniero"
                     company="INTERELECTRICAS S.A"
                     location="Bogotá, Colombia"
                     date="Junio 2024 - Julio 2024"
