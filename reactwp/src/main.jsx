@@ -8,7 +8,7 @@ console.log(document.getElementById("root")); // Verifica si no es null
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/reactwp'>
       <App />
     </BrowserRouter>
   </StrictMode>,
